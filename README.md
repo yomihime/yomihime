@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/profile-banner.png" alt="A moonlit software engineering and streaming workspace" width="88%" />
-</p>
-
 <h1 align="center">yomihime / 如月怜</h1>
 
 <p align="center">
