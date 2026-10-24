@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://blog.evenia.moe"><img src="https://img.shields.io/badge/Blog-f3a6c8?style=flat-square&logo=wordpress&logoColor=white" alt="Blog" /></a>
   <a href="https://space.bilibili.com/230632"><img src="https://img.shields.io/badge/Bilibili-00aeec?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
-  <a href="https://live.bilibili.com/7013636"><img src="https://img.shields.io/badge/LIVE-9b8cff?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili Live" /></a>
+  <a href="https://live.bilibili.com/7013636"><img src="assets/live-status.svg" alt="Bilibili Live 状态" height="20" /></a>
   <a href="https://twitter.com/yomihime_cc"><img src="https://img.shields.io/badge/%40yomihime__cc-11131f?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 </p>
 
@@ -31,8 +31,9 @@
 
 ## 最近在做什么 / 最近やっていること
 
-- 在慢慢完善 [CharaPicker / 拾卡姬](https://github.com/yomihime/CharaPicker)
-- 刚 fork 了一个 [Voice Changer](https://github.com/yomihime/voice-changer)，正在看看能不能接着折腾，顺便做点二次开发
+- 在折腾几个 **AstrBot 插件**：[游戏连结](https://github.com/yomihime/astrbot_plugin_yomihime_game_link)、[Steam DLC](https://github.com/yomihime/astrbot_plugin_yomihime_game_link_steam_dlc) 和 [额度连结](https://github.com/yomihime/astrbot_plugin_yomihime_quota_link)，都还在早期开发，慢慢补功能和打磨体验～
+- 继续维护和二次开发 [Voice Changer](https://github.com/yomihime/voice-changer)，也在折腾独立的 [Voice Changer Client](https://github.com/yomihime/voice-changer-client) 和试验性的 **Tauri 2** 桌面入口。NPU 适配也想做，不过手里还没有硬件，等换上带 NPU 的 CPU 再说，先往后排一排～
+- [CharaPicker / 拾卡姬](https://github.com/yomihime/CharaPicker) 已经有发布版，接下来继续慢慢打磨
 - 把随手写的小工具收进 [yomihime-pouch](https://github.com/yomihime/yomihime-pouch)
 - 重度 FF14 玩家，没在写代码的时候大概率就在艾欧泽亚
 
@@ -40,13 +41,27 @@
 
 ### [CharaPicker / 拾卡姬](https://github.com/yomihime/CharaPicker)
 
-因为很想把本命从番剧、漫画里好好提取出来，再做成 **AstrBot** 里可以聊天的人格，于是就有了拾卡姬～它是一个使用 **PyQt6 + AI** 制作的桌面工具，可以从各种素材里整理角色信息，慢慢积累成知识库，再导出成角色卡和 AstrBot 人格。
+因为很想把本命从番剧、漫画里好好提取出来，再做成 **AstrBot** 里可以聊天的人格，于是就有了拾卡姬～它是一个使用 **PyQt6 + AI** 制作的桌面工具，可以从视频、图片、音频、文本和聊天记录里整理角色信息，保留可追溯的素材依据，慢慢积累成知识库，再导出成角色卡和 AstrBot 人格。
 
-アニメや漫画に登場する推しの情報をきちんと拾い集めて、**AstrBot** で会話できるペルソナにしたくて作り始めました。いろいろな素材から情報を整理し、ナレッジベースやキャラクターカード、AstrBot ペルソナとして出力するデスクトップツールです。
+アニメや漫画に登場する推しの情報をきちんと拾い集めて、**AstrBot** で会話できるペルソナにしたくて作り始めました。動画・画像・音声・テキスト・チャット履歴から情報を整理し、出典をたどれるナレッジベースに蓄積して、キャラクターカードや AstrBot ペルソナとして出力するデスクトップツールです。
 
-还在一点点成长中，不过已经可以下载来玩了。如果遇到问题，也欢迎来告诉我～
+目前已经发布到 **v1.2.0**，可以下载来玩啦。文字部分看起来还有点 bug，不过优先级暂时不高，之后再慢慢修 w
+
+**v1.2.0** を公開しているので、よかったら遊んでみてね。テキストまわりにはまだ少し不具合がありそうですが、優先度は低めなので、修正はもう少し先になりそうです w
 
 [看看源码 / ソースコード](https://github.com/yomihime/CharaPicker) ・ [下载 / ダウンロード](https://github.com/yomihime/CharaPicker/releases/latest) ・ [更新记录 / 変更履歴](https://github.com/yomihime/CharaPicker/blob/main/CHANGELOG.md)
+
+### AstrBot 插件 / AstrBot プラグイン
+
+最近也在给 **AstrBot** 写一些自己想用的插件。**都还处于早期开发**，功能和使用方式可能会继续调整，先一点点把它们做好～
+
+最近は **AstrBot** 向けに、自分でも使いたいプラグインをいくつか作っています。**どれもまだ開発初期**で、機能や使い方はこれから変わるかもしれません。少しずつ育てていきたいです。
+
+| Project | 正在折腾的方向 / 作っているもの |
+| --- | --- |
+| [游戏连结 / Game Link](https://github.com/yomihime/astrbot_plugin_yomihime_game_link) | 在聊天里查询 FF14 物品、市场、公开角色战绩和日历。<br />FFXIV のアイテム・マーケット・公開戦績・カレンダーをチャットで確認。 |
+| [游戏连结：Steam DLC](https://github.com/yomihime/astrbot_plugin_yomihime_game_link_steam_dlc) | 为游戏连结扩展 Steam、Dota 2、CS2、Deadlock 相关查询和游戏生涯拼图，目前在 Alpha 功能分支里开发。<br />Steam・Dota 2・CS2・Deadlock の情報検索やゲーム履歴のコラージュを追加する拡張。Alpha ブランチで開発中です。 |
+| [额度连结 / Quota Link](https://github.com/yomihime/astrbot_plugin_yomihime_quota_link) | 在聊天里查询多个 AI 服务账户的余额或用量。<br />複数の AI サービスの残高・使用量をチャットで確認。 |
 
 ## 还会一点什么 / できること
 
